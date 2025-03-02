@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Color de fondo con transparencia -->
+    <solid android:color="#80FFFFFF" />  <!-- 80 indica 50% de transparencia -->
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="24dp" />
+
+    <!-- Efecto de sombra -->
+    <stroke
+        android:width="2dp"
+        android:color="#B0FFFFFF" />  <!-- Color del borde con transparencia -->
+
+    <!-- Efecto de gradiente para simular el cristal -->
+    <gradient
+        android:angle="45"
+        android:startColor="#80FFFFFF"
+        android:endColor="#80E0E0E0" />
+
+</shape>

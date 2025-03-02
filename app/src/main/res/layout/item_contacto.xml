@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/item_background"
+    android:elevation="4dp"
+    android:layout_margin="4dp">
+
+
+    <TextView
+    android:id="@+id/tvId"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="ID"
+    android:textSize="16sp"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/tvNombre"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintWidth_percent="0.2" />
+
+
+    <TextView
+    android:id="@+id/tvNombre"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Nombre"
+    android:textSize="16sp"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toEndOf="@id/tvId"
+    app:layout_constraintEnd_toStartOf="@id/tvNumero"
+    android:layout_marginEnd="8dp"
+    app:layout_constraintWidth_percent="0.4" />
+
+
+    <TextView
+    android:id="@+id/tvNumero"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Número"
+    android:textSize="16sp"
+    android:textColor="#FFFFFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toEndOf="@id/tvNombre"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintWidth_percent="0.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
